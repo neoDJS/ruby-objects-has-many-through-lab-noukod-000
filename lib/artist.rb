@@ -4,4 +4,8 @@ class Artist
   def initialize(name="")
     @@all << self
   end
+
+  def self.all
+    @@all.dup.freeze
+  end
 end
