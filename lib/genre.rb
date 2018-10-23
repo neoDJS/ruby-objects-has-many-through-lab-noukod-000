@@ -5,6 +5,10 @@ class Genre
     @name = name
   end
 
+  def self.all
+    @@all.dup.freeze
+  end
+  
   def songs
   end
 
