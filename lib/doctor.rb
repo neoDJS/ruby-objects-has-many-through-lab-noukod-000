@@ -18,5 +18,8 @@ class Doctor
   end
 
   def patients
+    self.appointments.map { |a|
+        a.patient
+    }
   end
 end
