@@ -8,8 +8,11 @@ class Genre
   def self.all
     @@all.dup.freeze
   end
-  
+
   def songs
+    Song.all.select do |s|
+      s.genre == self
+    end
   end
 
   def artists
