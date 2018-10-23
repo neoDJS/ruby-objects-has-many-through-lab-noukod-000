@@ -1,4 +1,4 @@
-class patient
+class Patient
   @@all = []
   attr_accessor
   def initialize(name="")
